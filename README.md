@@ -10,16 +10,15 @@ This is a Java desktop application that manages inventory for a manufacturing or
 The user interface of the application is based on a GUI Mockup. It is a JavaFX application that closely matches the organization of the GUI layout and contains all UI components (buttons, text fields, etc.) in each of the following GUI mock-up forms:
 
 - Main form
-![search_parts](https://user-images.githubusercontent.com/93474097/232260009-6740e549-cad9-4e52-831e-2b9bdd5e9202.gif)
+![search](https://github.com/camerongineer/Inventory_Manager_Java/assets/93474097/13847ed8-4a03-4415-8bbf-5faeea6dee47)
 
 - Add Part form
 - Modify Part form
-![modify_part](https://user-images.githubusercontent.com/93474097/232260147-bebb884a-4baa-41e8-8fbb-7f8661aa76da.gif)
+![parts](https://github.com/camerongineer/Inventory_Manager_Java/assets/93474097/7d588aa7-164a-4650-9402-0a99da8651bc)
 
 - Add Product form
 - Modify Product form
-![modify_product](https://user-images.githubusercontent.com/93474097/232260040-aee3582a-1926-43e0-9b40-9ebeb300694d.gif)
-![delete_product_error](https://user-images.githubusercontent.com/93474097/232260065-bbe54acb-daf3-4f37-8407-72c4c63fdd96.gif)
+![products](https://github.com/camerongineer/Inventory_Manager_Java/assets/93474097/81578f2c-3b26-427b-a262-a5ae861ed028)
 
 - FXML was used to create the user interface forms. Each form has a unique FXML file that was created using Scene Builder.
-![exit](https://user-images.githubusercontent.com/93474097/232260202-d7299345-e9ab-42e9-8e66-cebfbfc24230.gif)
+
