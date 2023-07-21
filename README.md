@@ -1,4 +1,4 @@
-# Inventory Management System
+# Inventory Manager
 ## Introduction
 This is a Java desktop application that manages inventory for a manufacturing organization. It provides functionality for adding, modifying and deleting parts and products, and managing the inventory levels of each product. This application was developed for an assessment and can be used to showcase relevant skills in software design and development.
 
