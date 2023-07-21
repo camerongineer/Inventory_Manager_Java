@@ -1,0 +1,108 @@
+.root * {
+    -fx-font-family: "Droid Sans", Tahoma, "Times New Roman", Times, serif;
+}
+
+.root {
+    -fx-background-color: #7A93AC;
+    -fx-font-scale: 2;
+}
+
+.button,
+.label,
+.radio-button .text,
+.tab-label,
+.table-cell,
+.text-field {
+    -fx-text-fill: #171A21;
+    -fx-fill: #171A21;
+    -fx-font-size: 125%;
+}
+
+
+.text-field {
+    -fx-background-color: rgb(97, 112, 115, .75);
+    -fx-border-color: #171A21;
+}
+
+.text-field {
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill: #cedbec;
+}
+
+
+.text-field:hover,
+.text-field:focused {
+    -fx-background-color: rgb(97, 112, 115);
+}
+
+
+.button {
+    -fx-background-color: #AFB3F7;
+    -fx-border-color: rgba(23, 26, 33, .5);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+}
+
+.button:hover {
+    -fx-background-color: #868bf8;
+}
+
+
+.text-field:hover,
+.button:hover {
+    -fx-border-color: white;
+}
+
+.image-view {
+    -fx-image: url("logo.png");
+}
+
+
+.table-view {
+    -fx-background-color: rgb(97, 112, 115, .75);
+    -fx-border-color: #171A21;
+}
+
+.table-view .text {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(146, 188, 234, 0.05);
+    -fx-fill: #171A21;
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgba(146, 188, 234, 0.15);
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(146, 188, 234, 0.25);
+}
+
+.table-row-cell:focused {
+    -fx-background-color: rgba(146, 188, 234, 0.4);
+}
+
+.tab-header-background {
+    -fx-background-color: #264653;
+    -fx-border-style: none;
+}
+
+.column-header,
+.scroll-bar,
+.track,
+.scroll-pane {
+    -fx-background-color: #92BCEA;
+    -fx-border-color: black;
+}
+
+.thumb {
+    -fx-background-color: #274956;
+}
+
+.error {
+    -fx-text-fill: red;
+}
