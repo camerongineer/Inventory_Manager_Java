@@ -9,9 +9,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /**
  * The Main class is the main class for this application.
@@ -113,9 +115,13 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainView.fxml"));
+        Image logoImage = new Image(String.valueOf(Main.class.getResource("logo.png")));
+        stage.getIcons().add(logoImage);
         Scene scene = new Scene(fxmlLoader.load());
+        String cssFile = Objects.requireNonNull(Main.class.getResource("style.css")).toExternalForm();
+        scene.getStylesheets().add(cssFile);
         stage.setScene(scene);
-        stage.setTitle("Inventory Management System");
+        stage.setTitle("Inventory Manager");
         stage.show();
         stage.setOnCloseRequest(event -> {
                     event.consume();

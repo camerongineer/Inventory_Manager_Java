@@ -12,11 +12,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
@@ -247,8 +249,11 @@ public class MainController implements Initializable {
     void addOrModifyPart(String title, Part part) throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("PartView.fxml"));
+        Image logoImage = new Image(String.valueOf(Main.class.getResource("logo.png")));
+        stage.getIcons().add(logoImage);
         Scene scene = new Scene(fxmlLoader.load());
-
+        String cssFile = Objects.requireNonNull(Main.class.getResource("style.css")).toExternalForm();
+        scene.getStylesheets().add(cssFile);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle(title);
@@ -374,7 +379,10 @@ public class MainController implements Initializable {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("ProductView.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-
+        Image logoImage = new Image(String.valueOf(Main.class.getResource("logo.png")));
+        stage.getIcons().add(logoImage);
+        String cssFile = Objects.requireNonNull(Main.class.getResource("style.css")).toExternalForm();
+        scene.getStylesheets().add(cssFile);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle(title);
